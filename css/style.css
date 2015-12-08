@@ -275,15 +275,6 @@ section.features {
 
 section.studio {
     padding: 70px 0;
-    /*background: url("../img/bg-studio.png") no-repeat 100% 90%;*/
-}
-
-section.studio#company {
-    background: url("../img/bg-studio.png") no-repeat 100% 90%;
-}
-
-section.studio#rehearsal-system {
-    background: url("../img/triple-pic.jpg") no-repeat 100% 111px;
 }
 
 .studio h1 {
@@ -294,11 +285,6 @@ section.studio#rehearsal-system {
 .studio p {
     margin: 17px 0;
     width: 560px;
-}
-
-.studio#company p {
-    margin-top: 53px;
-    margin-bottom: 41px;
 }
 
 .studio h3 {
@@ -334,6 +320,92 @@ section.studio#rehearsal-system {
     top: 8px;
     margin-top: -1px;
     left: 0;
+}
+
+.studio#company {
+    background: url("../img/bg-studio.png") no-repeat 100% 90%;
+}
+
+.studio#company p {
+    margin-top: 53px;
+    margin-bottom: 41px;
+}
+
+.studio#rehearsal-system {
+    position: relative;
+}
+
+.studio#rehearsal-system .triple-pic {
+    position: absolute;
+    top: 111px;
+    right: 0;
+}
+
+.studio#rehearsal-system .triple-pic [class*=pic] {
+    position: relative;
+
+    transition: all .25s;
+    filter: brightness(1);
+    -webkit-filter: brightness(1);
+}
+
+.studio#rehearsal-system .triple-pic [class*=pic]:hover {
+    filter: brightness(1.1);
+    -webkit-filter: brightness(1.1);
+}
+
+.studio#rehearsal-system .triple-pic .pic-1 {
+    width: 240px;
+    height: 231px;
+    background: url(../img/triple-pic-1.jpg) no-repeat 50% 50%;
+}
+
+.studio#rehearsal-system .triple-pic .pic-2 {
+    width: 240px;
+    height: 61px;
+    background: url(../img/logo-header.png) no-repeat 50% 50%;
+}
+
+.studio#rehearsal-system .triple-pic .pic-3 {
+    width: 240px;
+    height: 144px;
+    background: url(../img/triple-pic-3.jpg) no-repeat 50% 50%;
+}
+
+.studio#rehearsal-system .triple-pic [class*=pic] .title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    padding: 10px;
+    background: #009DE2;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+
+    opacity: 0;
+    transition: all .25s;
+}
+
+.studio#rehearsal-system .triple-pic [class*=pic]:hover .title {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.studio#rehearsal-system .triple-pic .arrow {
+    width: 240px;
+    height: 46px;
+    margin: 20px 0;
+    -webkit-background-size: 8px 46px;
+    background-size: 8px 46px;
+}
+
+.studio#rehearsal-system .triple-pic .arrow.blue {
+    background: url(../img/arrow-blue.svg) no-repeat 50% 50%;
+}
+
+.studio#rehearsal-system .triple-pic .arrow.red {
+    background: url(../img/arrow-red.svg) no-repeat 50% 50%;
 }
 
 section.clients {
